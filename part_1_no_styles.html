@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style></style>
+</head>
+
+<body>
+	<h1>Please Enter Your Details For Our Dating Website!</h1>
+	<br>
+	<br>
+
+<form method="post" enctype="multipart/form-data" action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+	<fieldset>
+	<legend>Your Face</legend>
+		<label for="avatar">Your image:</label>
+		<input type="file" id="avatar" name="avatarDB" required>
+		<br>
+		<br>
+
+		<label for="preview">Image preview:</label>
+		<img id="preview">
+	</fieldset>
+	<br>
+
+	<fieldset>
+	<legend>Your General Details</legend>
+		<label for="fullname">Name:</label>
+		<input type="text" id="fullname" placeholder="Your full name" name="fullnameDB" required>
+		<br>
+		<br>
+
+		<label for="gender">Gender:</label>
+		<input type="radio" id="gender" value="male" required name="genderDB">Male
+		<input type="radio" id="gender" value="female" required name="genderDB">Female
+		<br>
+		<br>
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" required name="ageDB">
+		<br>
+		<br>
+
+		<label for="dateofbirth">Date of birth:</label>
+		<input type="date" id="dateofbirth" name="birthdayDB">
+		<br>
+		<br>
+
+		<label for="favcolor">Favorite color:</label>
+		<input type="color" id="favcolor" name="favcolorDB">
+		<br>
+		<br>
+
+		<label for="country">Which country:</label>
+		<select name="countryDB" id="country">
+			<option value="noselection"></option>
+			<option value="CND">Canada</option>
+			<option value="USA">United States</option>
+			<option value="UKR">Ukraine</option>
+			<option value="GER">Germany</option>
+			<option value="JPN">Japan</option>
+		</select>
+		<br>
+		<br>
+
+	</fieldset>
+	<br>
+
+	<fieldset>
+	<legend>Your Indicators</legend>
+
+		<label for="height">Height:</label>
+		<span>Short</span> <input type="range" min="0" max="100" id="height" name="heightDB"> <span>Tall</span>
+		<br>
+		<br>
+
+		<label for="salary">Salary:</label>
+		<span>Poor</span> <input type="range" min="0" max="100" id="salary" name="salaryDB"> <span>Rich</span>
+		<br>
+
+	</fieldset>
+	<br>
+
+	<fieldset>
+	<legend>Your Contact Information</legend>
+
+		<label for="email">Email:</label>
+		<input type="email" required id="email" name="emailDB">
+		<br>
+		<br>
+
+		<label for="mobile">Mobile:</label>
+		<input input type="tel" id="mobile" name="mobileDB">
+		<br>
+		<br>
+
+		<label for="address">Address:</label>
+			<textarea name="address" id="address" name="addressDB">
+			</textarea>
+		<br>
+		<br>
+
+		<label for="howtocontact">Method to contact you:</label>
+		<input type="checkbox" id="howtocontact" name="howtocontactDB">Email
+		<input type="checkbox" id="howtocontact" name="howtocontactDB">Whatsapp
+		<input type="checkbox" id="howtocontact" name="howtocontactDB">In-app chat
+		<br>
+		<br>
+
+	</fieldset>
+	<br>
+
+	<input type="submit" value="Submit" name="submitDB">
+</form>
+</body>
+</html>
